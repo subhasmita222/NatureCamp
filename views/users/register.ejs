@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %> 
+
+<div class="container d-flex justify-content-center align-items-center "></div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+                    alt="" class="card-img-top" />
+                <h5 class="card-title"></h5>
+                <div class="card-body">
+                    <form action="/register" method="POST"  class="needs-validationx"  novalidate>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="username" name="username" autofocus required>
+                            <div class="valid-feedback">
+                                Looks good!
+                              </div> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="email" name="email" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                              </div> 
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                              </div> 
+                        </div>
+                        <button class="btn btn-success d-grid gap-2 col-12 mx-auto">Register</button>
+                    </form>
+            </div>
+
+            </div>
+        </div>
+    </div>
